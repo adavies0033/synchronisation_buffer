@@ -25,4 +25,5 @@ curl -OL https://github.com/Kitware/CMake/releases/download/v3.27.0-rc5/cmake-3.
 curl -OL https://github.com/Kitware/CMake/releases/download/v3.27.0-rc5/cmake-3.27.0-rc5.tar.gz
 sha256sum -c --ignore-missing cmake-3.27.0-rc5-SHA-256.txt
 
-
+# Other
+sudo apt-get update && sudo apt-get install build-essential
