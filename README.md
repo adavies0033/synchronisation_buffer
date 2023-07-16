@@ -11,13 +11,17 @@ Synchronization Primitives for Class Design:
 4) Semaphores
 
 In Case Unfamiliar with CMake:
+
 To run the executables starting from project root,
+```
 cd build
 cmake ..
 make 
 ./synchronisation_buffer
-
+```
 
 References (Non specific format):
+
     - Youtube Channel | Chris Kanich | https://www.youtube.com/@ChrisKanich
+    
     - Website | cppreference.com | https://en.cppreference.com/w/cpp/language/classes
