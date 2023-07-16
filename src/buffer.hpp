@@ -18,6 +18,7 @@ class ThreadSafeBuffer{
     {
          // Memory Management placeholder
          std::cout << "Host Heap Memory Deallocated {Buffer}" << std::endl;
+         free(m_buffer_ptr);
     }
 
     // Obtain the Buffer's Pointer for external use
