@@ -29,3 +29,5 @@ make
     - Youtube Channel | Chris Kanich | https://www.youtube.com/@ChrisKanich
     
     - Website | cppreference.com | https://en.cppreference.com/w/cpp/language/classes
+
+    - An Introduction to Multithreading in C++20 - Anthony Williams - CppCon 2022 | https://www.youtube.com/watch?v=A7sVFJLJM-A
