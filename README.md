@@ -24,7 +24,7 @@ make
 ./synchronisation_buffer
 ```
 
-### References (Non specific format):
+### References (Non specified format):
 
     - Youtube Channel | Chris Kanich | https://www.youtube.com/@ChrisKanich
     
