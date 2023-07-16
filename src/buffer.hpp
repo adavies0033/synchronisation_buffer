@@ -1,19 +1,28 @@
 #pragma once 
 
+#include <thread>
+#include <mutex>
+#include <shared_mutex>
+
 class ThreadSafeBuffer{
     // Base Class definition base off an Integer Buffer Type
+
+    private:
+    // ThreadSafebuffer Attributes
+    int* m_buffer_ptr;
     
     public:
     // ThreaSafeBuffer Constructor 
-    ThreadSafeBuffer(int value)
+    ThreadSafeBuffer(int arg)
     {   
         // Memory Management placeholder
         std::cout << "Host Heap Memory Allocated {Buffer}" << std::endl;
         m_buffer_ptr = (int*) malloc(sizeof(int));
+        (*m_buffer_ptr) = arg;
         
     }
 
-    // ThreaSafeBuffer Destructor 
+    // ThreadSafeBuffer Destructor 
     ~ThreadSafeBuffer()
     {
          // Memory Management placeholder
@@ -21,14 +30,11 @@ class ThreadSafeBuffer{
          free(m_buffer_ptr);
     }
 
-    // Obtain the Buffer's Pointer for external use
-    int* getThreadSafeBuffer()
+    // Access the Buffer for from external src
+    int getThreadSafeBuffer()
     {
-        return m_buffer_ptr;
+        return (*m_buffer_ptr);
     }
 
-    private:
-    // ThreadSafebuffer Attributes
-    int* m_buffer_ptr;
 
 };
