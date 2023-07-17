@@ -1,6 +1,8 @@
 CMakeFiles/synchronisation_buffer.dir/src/main.cpp.o: \
  /home/alex/synchronisation_buffer/src/main.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/9/iostream \
+ /usr/include/stdc-predef.h \
+ /home/alex/synchronisation_buffer/src/main.hpp \
+ /usr/include/c++/9/iostream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -138,7 +140,6 @@ CMakeFiles/synchronisation_buffer.dir/src/main.cpp.o: \
  /usr/include/c++/9/bits/basic_ios.tcc \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/istream \
  /usr/include/c++/9/bits/istream.tcc \
- /home/alex/synchronisation_buffer/src/main.hpp \
  /home/alex/synchronisation_buffer/src/buffer.hpp \
  /usr/include/c++/9/thread /usr/include/c++/9/chrono \
  /usr/include/c++/9/ratio /usr/include/c++/9/ctime \

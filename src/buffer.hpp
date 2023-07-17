@@ -1,5 +1,7 @@
 #pragma once 
 
+#include <iostream>
+
 #include <thread>
 #include <mutex>
 #include <shared_mutex>
@@ -45,11 +47,11 @@ class ThreadSafeBuffer{
 
 
     // Edit the Buffer for from external src
-    int setThreadSafeBuffer()
+    void setThreadSafeBuffer(int arg)
     {
         // Enetr Critical Section as Writer
         std::unique_lock<std::shared_mutex> lock(m_smtx);
-        return (*m_buffer_ptr);
+        (*m_buffer_ptr) = arg;
         // unlock due to drop out of scope
     }
 
