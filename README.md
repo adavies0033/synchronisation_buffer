@@ -24,3 +24,4 @@ make
     - Website | cppreference.com | https://en.cppreference.com/w/cpp/language/classes
     - An Introduction to Multithreading in C++20 - Anthony Williams - CppCon 2022 | https://www.youtube.com/watch?v=A7sVFJLJM-A
     - https://en.cppreference.com/w/cpp/thread
+    -https://web.mit.edu/6.031/www/fa17/classes/20-thread-safety/
