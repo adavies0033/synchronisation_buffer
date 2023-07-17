@@ -10,6 +10,7 @@ class ThreadSafeBuffer{
     private:
     // ThreadSafebuffer Attributes
     int* m_buffer_ptr;
+    mutable std::shared_mutex m_smtx;
     
     public:
     // ThreaSafeBuffer Constructor 
