@@ -25,4 +25,4 @@ make
     - An Introduction to Multithreading in C++20 - Anthony Williams - CppCon 2022 | https://www.youtube.com/watch?v=A7sVFJLJM-A
     - https://en.cppreference.com/w/cpp/thread
     - https://web.mit.edu/6.031/www/fa17/classes/20-thread-safety/
-    - Considering Threadability | https://lefticus.gitbooks.io/cpp-best-practices/content/07-Considering_Threadability.html
+    - Considering Threadability | M&M rule, C++11 | https://lefticus.gitbooks.io/cpp-best-practices/content/07-Considering_Threadability.html
