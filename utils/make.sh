@@ -5,3 +5,7 @@ mkdir build
 cd build
 cmake ..
 make 
+echo ""
+echo ""
+echo ""
+./synchronisation_buffer
