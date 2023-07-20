@@ -18,7 +18,7 @@ void test_getter_and_setter(ThreadSafeBuffer* buffer)
     (*buffer).setThreadSafeBuffer(test_case);
     assert( test_case == (*buffer)->getThreadSafeBuffer());
 
-    std::cout << "    - Passed void test_getter_and_setter ! " << std::endl;
+    std::cout << "    - Passed void test_getter_and_setter!" << std::endl;
 }
 
 
