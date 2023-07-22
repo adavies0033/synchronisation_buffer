@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/synchronisation_buffer.dir/src/main.cpp.o -o synchronisation_buffer 

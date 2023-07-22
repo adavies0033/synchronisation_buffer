@@ -1,3 +1,0 @@
-/home/alex/synchronisation_buffer/build/CMakeFiles/synchronisation_buffer.dir
-/home/alex/synchronisation_buffer/build/CMakeFiles/edit_cache.dir
-/home/alex/synchronisation_buffer/build/CMakeFiles/rebuild_cache.dir

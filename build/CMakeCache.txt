@@ -215,6 +215,12 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//The directory containing a CMake configuration file for CUDA.
+CUDA_DIR:PATH=CUDA_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for OpenCV.
+OpenCV_DIR:PATH=/usr/local/lib/cmake/opencv4
+
 //Value Computed by CMake
 synchronisation_buffer_BINARY_DIR:STATIC=/home/alex/synchronisation_buffer/build
 

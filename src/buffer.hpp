@@ -6,6 +6,12 @@
 #include <mutex>
 #include <shared_mutex>
 
+
+#define FRAME_HEIGHT 2048
+#define FRAME_WIDTH 1536
+#define MAT_TYPE CV_8UC3
+
+
 // Base Class definition base off an Integer Buffer Type
     //    - m_buffer_ptr : pointer to the memory location of data type
     //    - m_smtx : gives a instance specific mutex lock for the reader writer problem and race condition 
@@ -14,17 +20,18 @@
 class ThreadSafeBuffer{
     private:
     // ThreadSafebuffer Attributes
-    int* m_buffer_ptr;
+    cv::Mat m_host_buffer;
+    cv::cuda::GpuMat m_host_buffer;
     mutable std::shared_mutex m_smtx;
     
     public:
     // ThreaSafeBuffer Constructor 
-    ThreadSafeBuffer(int arg)
+    ThreadSafeBuffer()
     {   
         // Memory Management placeholder
         std::cout << "Host Heap Memory Allocated {Buffer}" << std::endl;
         m_buffer_ptr = (int*) malloc(sizeof(int));
-        (*m_buffer_ptr) = arg;
+        
         
     }
 

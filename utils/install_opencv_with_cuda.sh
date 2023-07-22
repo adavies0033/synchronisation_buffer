@@ -6,6 +6,7 @@
 
 # GeForce RTX 2070, 7.5
 
+# Thu Jul 20 22:50:06 2023       
 # +---------------------------------------------------------------------------------------+
 # | NVIDIA-SMI 535.54.03              Driver Version: 535.54.03    CUDA Version: 12.2     |
 # |-----------------------------------------+----------------------+----------------------+
@@ -13,18 +14,19 @@
 # | Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
 # |                                         |                      |               MIG M. |
 # |=========================================+======================+======================|
-# |   0  NVIDIA GeForce RTX 2070 ...    Off | 00000000:01:00.0 Off |                  N/A |
-# | N/A   36C    P0              14W /  80W |      6MiB /  8192MiB |      0%      Default |
+# |   0  NVIDIA GeForce RTX 2070 ...    On  | 00000000:01:00.0 Off |                  N/A |
+# | N/A   39C    P0              16W /  80W |      6MiB /  8192MiB |      0%      Default |
 # |                                         |                      |                  N/A |
 # +-----------------------------------------+----------------------+----------------------+
-#                                                                                         
+                                                                                         
 # +---------------------------------------------------------------------------------------+
 # | Processes:                                                                            |
 # |  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
 # |        ID   ID                                                             Usage      |
 # |=======================================================================================|
-# |    0   N/A  N/A      2000      G   /usr/lib/xorg/Xorg                            4MiB |
+# |    0   N/A  N/A      1954      G   /usr/lib/xorg/Xorg                            4MiB |
 # +---------------------------------------------------------------------------------------+
+
 
 
 
@@ -145,6 +147,7 @@ nproc # to know how much cores do you have
 make -j8 #where x is the number of cores, if not sure use -j4
 sudo make install
 
-
+# Attmepts to sort out linking so CMake can find CUDA
 sudo /bin/bash -c 'echo "/usr/local/lib" >> /etc/ld.so.conf.d/opencv.conf'
 sudo ldconfig
+sudo ln -s /usr/local/cuda-12.2 /usr/local/cuda
