@@ -92,6 +92,8 @@ synchronisation_buffer_EXTERNAL_OBJECTS =
 
 synchronisation_buffer: CMakeFiles/synchronisation_buffer.dir/src/main.cpp.o
 synchronisation_buffer: CMakeFiles/synchronisation_buffer.dir/build.make
+synchronisation_buffer: /usr/local/cuda/lib64/libcudart_static.a
+synchronisation_buffer: /usr/lib/x86_64-linux-gnu/librt.a
 synchronisation_buffer: /usr/local/lib/libopencv_gapi.so.4.8.0
 synchronisation_buffer: /usr/local/lib/libopencv_stitching.so.4.8.0
 synchronisation_buffer: /usr/local/lib/libopencv_aruco.so.4.8.0

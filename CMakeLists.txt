@@ -25,9 +25,7 @@ message(STATUS "    include path: ${CUDA_INCLUDE_DIRS}")
 include_directories(${OpenCV_INCLUDE_DIRS})
 include_directories(${CUDA_INCLUDE_DIRS})
 
-# LINK LIBRARIES
-link_libraries(${OpenCV_LIBS})
-link_libraries(${CUDA_LIBS})
+
 
 # Target the only executable
 add_executable(${PROJECT_NAME}
@@ -35,6 +33,11 @@ add_executable(${PROJECT_NAME}
     src/main.hpp 
     src/buffer.hpp 
 )
+
+# Link 
+target_link_libraries(${PROJECT_NAME} ${CUDA_LIBRARIES})
+target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS})
+
 
 
 

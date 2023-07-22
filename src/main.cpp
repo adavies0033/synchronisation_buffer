@@ -12,14 +12,16 @@ void test_getter_and_setter(ThreadSafeBuffer* buffer)
 
 
 
-// // ------------------------------------------------------------
 
 
 
 int main()
 {
-    
+    // initialize buffer
+    ThreadSafeBuffer* buffer = new ThreadSafeBuffer();
 
+    // call device info getter
+    buffer->get_device_info();
 
 
     return 0;
